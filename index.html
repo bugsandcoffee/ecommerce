@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's shop!</title>
+    <link rel="shortcut icon" href="images/fav-icon.png" />
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/lightslider.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous" ></script>
+
+    <script src="js/JQuery.js"></script>
+    <script src="js/lightslider.js"></script>
+
+</head>
+<body>
+    <!--nav-->
+    <nav>
+        <!--social links-->
+        <div class="social-call">
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!--manu- bar-->
+        <div class="navigation">
+            <!--logo-->
+            <a href="#" class="logo">
+                <img src="images/logo.png" />
+            </a>
+            <!--menu-->
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Men</a>
+                <!--sale-label-->
+                    <span class="sale-label">Sale</span>
+                </li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+            <!--right menu-->
+            <div class="right-menu">
+                <!--search-->
+                <a href="#" class="search">
+                    <i class="fas fa-search"></i>
+                </a>
+                <!--user-->
+                <a href="#" class="user">
+                    <i class="far fa-user"></i>
+                </a>
+                <!--cart-icon-->
+                <a href="#">
+                    <i class="fas fa-shopping-cart">
+                        <!--number-of-product-in cart-->
+                        <span class="num-cart-product">0</span>
+                    </i>
+                </a>
+            </div>
+        </div>
+    </nav>    
+    <!--search-bar-->
+    <div class="search-bar">
+        <!--search-input-->
+        <div class="search-input">
+            <!--input-->
+            <input type="text" placeholder="Search For Product" />
+            <!--cancel-btn-->
+            <a href="#" class="search-cancel">
+                <i class="fas fa-times"></i>
+
+            </a>
+        </div>
+    </div>
+
+
+    <!--login and sign up-->
+    <div class="form">
+        <!--login-->
+        <div class="login-form">
+            <!--cancel btn-->
+            <a href="#" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <!--heading-->
+            <strong>Log In</strong>
+            <!--inputs-->
+            <form>
+                <input type="email" placeholder="Example@gmail.com" name="email" required >
+                <input type="password" placeholder="Password" name="password" required >
+                <!--submit btn-->
+                <input type="submit" value="Log In" >
+            </form>
+            <!--forget and sign upbtn-->
+            <div class="form-btns">
+                <a href="#" class="forget">Forget Your Password?</a>
+                <a href="#" class="sign-up-btn">Create Account</a>
+            </div>
+        </div>
+
+
+        <!--Sign up-->
+        <div class="sign-up-form">
+            <!--cancel btn-->
+            <a href="#" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <!--heading-->
+            <strong>Sign Up</strong>
+            <!--inputs-->
+            <form>
+                <input type="text" placeholder="Full Name" name="fullname" required>
+                <input type="email" placeholder="Example@gmail.com" name="email" required >
+                <input type="password" placeholder="Password" name="password" required>
+                <!--submit btn-->
+                <input type="submit" value="Sign up" >
+            </form>
+            <!--already have account-->
+            <div class="form-btns">
+                <a href="#" class="already-account">Already Have Account?</a>
+                
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!--Full slider-->
+
+
+    <ul id="adaptive" class="cs-hidden">
+        <!--box 1-->
+        <li class="item-a">
+            <!--box-->
+            <div class="full-slider-box f-slide-1">
+                <!--slider text container-->
+                <div class="slider-text-container">
+                    <div class="f-slider-text">
+                    <span>Limited offer</span>
+                    <strong>30% off <br /> with <font>promo code </font> </strong>
+                    <a href="#" class="f-slider-btn">Shop Now</a>
+                </div>
+            </div>
+            </div>
+        </li>
+
+        <!--box 2-->
+        <li class="item-a">
+            <!--box-->
+            <div class="full-slider-box f-slide-2">
+                <!--slider text container-->
+                <div class="slider-text-container">
+                    <div class="f-slider-text">
+                    <span>Limited offer</span>
+                    <strong>30% off <br /> with <font>promo code </font> </strong>
+                    <a href="#" class="f-slider-btn">Shop Now</a>
+                </div>
+            </div>
+            </div>
+        </li>
+
+        <!--box 3-->
+        <li class="item-a">
+            <!--box-->
+            <div class="full-slider-box f-slide-3">
+                <!--slider text container-->
+                <div class="slider-text-container">
+                    <div class="f-slider-text">
+                    <span>Limited offer</span>
+                    <strong>30% off <br /> with <font>promo code </font> </strong>
+                    <a href="#" class="f-slider-btn">Shop Now</a>
+                </div>
+            </div>
+            </div>
+        </li>
+        
+      </ul>
+
+
+
+
+
+
+    
+
+
+    <!--jQuery-->
+    <script src="js/JQuery.js"></script>
+    <!--script-->
+    <script type="text/javascript">
+    
+
+    /*--For Search bar--*/
+    $(document).on('click', '.search', function(){
+        $('.search-bar').addClass('search-bar-active')
+    });
+
+    $(document).on('click', '.search-cancel', function(){
+        $('.search-bar').removeClass('search-bar-active')
+    });
+
+    /*--Login and signup--*/
+    $(document).on('click', '.user,.already-account', function(){
+        $('.form').addClass('login-active').removeClass('sign-up-active')
+    });
+
+    $(document).on('click', '.sign-up-btn', function(){
+        $('.form').addClass('sign-up-active').removeClass('login-active')
+    });
+
+    $(document).on('click', '.form-cancel', function(){
+        $('.form').removeClass('login-active').removeClass('sign-up-active')
+    });
+
+    /* -full-slider-script--*/
+    $(document).ready(function() {
+    $('#adaptive').lightSlider({
+        adaptiveHeight:true,
+        item:1,
+        slideMargin:0,
+        loop:true
+    });
+});
+    </script>
+</body>
+</html>
