@@ -176,7 +176,7 @@
   left: 10px;
 }
 .lSAction > .lSNext {
-  background-position: -32px 0;
+  background-position: -55px 0;
   right: 10px;
 }
 .lSAction > a.disabled {
@@ -213,7 +213,7 @@
   margin-top: 0;
 }
 .lSSlideOuter.vertical .lSAction > .lSNext {
-  background-position: 31px -31px;
+  background-position: 51px -64px;
   bottom: 10px;
   top: auto;
 }
