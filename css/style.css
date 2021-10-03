@@ -40,7 +40,7 @@ nav {
 }
 
 .social a:hover {
-  color: #0b9d8a;
+  color: #faba59;
   transition: all ease 0.3s;
 }
 
@@ -53,10 +53,12 @@ nav {
 
 .logo img {
   height: 30px;
+  border-radius: 10px;
 }
 
 .menu {
   display: flex;
+ 
 }
 
 .menu li {
@@ -65,10 +67,12 @@ nav {
   display: flex;
   text-transform: uppercase;
   font-weight: 500;
+  
 }
 
 .menu li a {
   color: #555;
+  
 }
 
 .right-menu a {
@@ -81,7 +85,8 @@ nav {
 .right-menu a:hover,
 .search-cancel:hover,
 .form-cancel:hover {
-  color: #0b9d8a;
+  color: #faba59;
+  background-color: rgba(0, 0, 0, 0.07);
   transition: all ease 0.3s;
 }
 
@@ -125,7 +130,7 @@ nav {
   height: 25px;
   font-size: 0.8rem;
   border-radius: 50%;
-  background-color: #0b9d8a;
+  background-color: #faba59;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -255,7 +260,7 @@ nav {
 
 .login-form input[type="submit"],
 .sign-up-form input[type="submit"] {
-  background-color: #0b9d8a;
+  background-color: #faba59;
   color: #fff;
   border: none;
   outline: none;
@@ -332,7 +337,7 @@ nav {
   background-image: url("https://wallpapercave.com/wp/wp4311768.jpg");
 }
 .f-slide-2 {
-  background-image: url("https://www.bevindustry.com/ext/resources/Chamberlain-coffee.png");
+  background-image: url("https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
 }
 .f-slide-3 {
   background-image: url("https://images.hdqwalls.com/wallpapers/emma-chamberlain-2020-g3.jpg");
@@ -379,7 +384,7 @@ nav {
   justify-content: center;
   align-items: center;
   color: #fff;
-  background-color: #0b9d8a;
+  background-color: #faba59;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 14px;
@@ -387,7 +392,7 @@ nav {
 
 .f-slider-text strong font,
 .banner-text strong font {
-  color: #0b9d8a;
+  color: #faba59;
 }
 
 .feature-heading {
@@ -396,16 +401,29 @@ nav {
   align-items: center;
 }
 
-.feature-heading h2,
-.arrival-heading strong {
-  font-size: 1.5rem;
-  color: #1b1919;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-top: 40px;
-  padding: 5px 30px;
-  border: 1px solid #e0e0e0;
+
+.arrival-heading strong{
+    font-size: 1.5rem;
+    color: #645c5c;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 40px;
+    padding: 5px 30px;
+    border: 3px solid #181716;
+    border-radius: 10px;
+}
+
+.feature-heading h2{
+    font-size: 1.5rem;
+    color: #645c5c;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 40px;
+    padding: 5px 30px;
+    border: 3px solid #faba59;
+    border-radius: 10px;
 }
 
 .feature-box {
@@ -524,7 +542,7 @@ nav {
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  background-color: #0b9d8a;
+  background-color: #faba59;
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
   display: none;
   animation: fade 0.3s;
@@ -610,7 +628,7 @@ nav {
   flex-grow: 0.7;
 }
 .services-box i {
-  color: #0b9d8a;
+  color: #faba59;
   font-size: 2rem;
   margin: 15px;
 }
@@ -649,7 +667,7 @@ footer {
 }
 .subscribe input[type="submit"] {
   width: 120px;
-  background-color: #0b9d8a;
+  background-color: #faba59;
   color: #ffffff;
   margin: 0px 5px;
 }
@@ -682,12 +700,13 @@ footer {
     top: 110px;
     left: 0px;
     background-color: #ffffff;
-    border-bottom: 4px solid #0b9d8a;
+    border-bottom: 4px solid #faba59;
     width: 100%;
     padding: 0px;
     margin: 0px;
     z-index: 102;
     flex-direction: column;
+    display: none;
   }
   .fix-nav .menu {
     top: 80px;
@@ -706,7 +725,7 @@ footer {
     padding: 25px;
     border: 1px solid rgba(0, 0, 0, 0.03);
   }
-  .sale-lable {
+  .sale-label {
     display: none;
   }
   .toggle {
@@ -719,4 +738,109 @@ footer {
     z-index: 1;
     cursor: pointer;
   }
+
+  .toggle.active:before{
+      content: '\f00d';
+  }
+
+  .navigation.active .menu{
+    display: block;
+  }
+    
+  .full-slider-box,
+  .banner-box{
+    height: 45vh;
+  }
+    .f-slider-text span,
+    .banner-text span{
+        font-size: 0.9rem;
+    }
+    .f-slider-text strong,
+    .banner-text strong{
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .search-input{
+        height: 60px;
+    }
+    .search-input input,
+    .search-cancel{
+        font-size: 1.4rem;
+    }
+    .sale-box{
+        height: 200px;
+    }
+    }
+    @media(max-width:600px){
+    .navigation{
+        padding: 10px;
+    }
+    .f-slider-text strong,
+    .banner-text strong{
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
+    .full-slider-box,
+    .banner-box{
+        height: 30vh;
+    }
+    .f-slider-text span,
+    .banner-text span{
+        font-size: 0.8rem;
+    }
+    .f-slider-btn,
+    .banner-btn{
+        width:120px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    .feature-heading h2{
+        font-size: 1.2rem;
+    }
+    .feature-box{
+        width:120px;
+        height: 120px;
+    }
+    .new-arrival strong,
+    .feature-heading strong{
+        font-size: 1.2rem;
+    }
+    .new-arrival p,
+    .feature-heading p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .sale-box{
+        width:100%;
+        height: 180px;
+    }
+    .sale{
+        width: 100%;
+    }
+    .services{
+        width:100%;
+    }
+    .services-box{
+        width:100%;
+    }
+    .copyright{
+        margin: 20px 0px;
+        text-align: center;
+    }
+    .subscribe{
+        width:100%;
+    }
+    .subscribe form{
+        flex-wrap: nowrap;
+        display: flex;
+        width:100%;
+    }
+    .subscribe input{
+        width:100%;
+        flex-grow: 1;
+    }
+    .login-form,
+    .sign-up-form{
+        width:90%;
+    }
 }
